@@ -1,0 +1,42 @@
+target-version = "py312"
+
+line-length = 88
+indent-width = 4
+exclude = [
+    ".git",
+    ".venv",
+    "build",
+    "dist",
+    "_deps",
+    "__pycache__",
+    "*.egg-info",
+]
+
+[lint]
+select = [
+    "E", "W", "F", "I", "N", "UP", "B", "C4", "SIM", "NPY"
+]
+
+ignore = [
+    "E501",
+    "B028",
+    "N806",
+    "E741",
+]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[lint.per-file-ignores]
+"benchmarks/*" = ["E402", "F841"]
+"tests/*" = ["S101"]
+"**/__init__.py" = ["F401", "F403"]
+
+[lint.isort]
+known-first-party = ["jax_fused_ops"]
+combine-as-imports = true
+lines-after-imports = 2
+
+[format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"

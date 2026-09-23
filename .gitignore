@@ -1,0 +1,114 @@
+    # ==========================================
+# C++ & CUDA Build Artifacts
+# ==========================================
+build/
+cmake-build-*/
+bin/
+lib/
+*.o
+*.obj
+*.so
+*.dylib
+*.dll
+*.a
+*.lib
+*.mod
+*.i
+*.cub
+*.ptx
+
+# CMake Generated Files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+compile_commands.json
+install_manifest.txt
+_deps/
+
+# ==========================================
+# Python & Packaging
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.python-version
+
+# Virtual Environments & Package Managers
+.venv/
+venv/
+ENV/
+env/
+.uv/
+
+# Distribution & Building
+.python_packages/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ==========================================
+# Jupyter Notebooks & Benchmarks
+# ==========================================
+.ipynb_checkpoints
+*-checkpoint.ipynb
+.virtual_documents/
+
+# Benchmarking Data & Outputs
+*.prof
+*.profraw
+*.pb
+*.json
+*.csv
+/benchmarks/outputs/
+
+# ==========================================
+# IDEs & Text Editors
+# ==========================================
+# VS Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# CLion / JetBrains
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Vim
+*~
+*.swp
+*.swo
+
+# ==========================================
+# OS & System Files
+# ==========================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+.ruff_cache
+.spack-env
