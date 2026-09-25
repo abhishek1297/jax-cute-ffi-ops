@@ -1,0 +1,19 @@
+spack:
+  specs:
+  - cudnn
+  - cuda
+  - py-uv
+  - python@3.14
+  - cutlass
+  view: true
+  concretizer:
+    unify: true
+    reuse: true
+  packages:
+    cutlass:
+      require: "+cuda cuda_arch=75,80,90"
+    gcc:
+      buildable: false
+    cuda:
+      buildable: false
+
